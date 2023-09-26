@@ -12,9 +12,5 @@
 
 
 
-    <ItemGroup>
-      <Folder Include="Enemy\CommonEnemy\" />
-      <Folder Include="Functionality\" />
-    </ItemGroup>
 
 </Project>

@@ -1,13 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "e1cyJzCzl1WQAEz10+v7q0gHZo1wENoqmcyzQsZ0mZWC2TDErzhnmkJJfVRhC9AxRs6pnP5imYdBFyD1ey8p7g==",
+  "dgSpecHash": "tt4iU5oitjCTvSi38BuUxUHOINRPJMC5KJ2DQ3FcOw2meWz91cnXQbJGf8UdlkTEtV6LCVzBgmTtoH8C9KxVdA==",
   "success": true,
   "projectFilePath": "C:\\Users\\MadMe\\RiderProjects\\RPG-TextGame\\RPG-TextGame\\RPG-TextGame.csproj",
-  "expectedPackageFiles": [
-    "C:\\Users\\MadMe\\.nuget\\packages\\microsoft.netcore.app.ref\\7.0.9\\microsoft.netcore.app.ref.7.0.9.nupkg.sha512",
-    "C:\\Users\\MadMe\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\7.0.9\\microsoft.windowsdesktop.app.ref.7.0.9.nupkg.sha512",
-    "C:\\Users\\MadMe\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\7.0.9\\microsoft.aspnetcore.app.ref.7.0.9.nupkg.sha512",
-    "C:\\Users\\MadMe\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\7.0.9\\microsoft.netcore.app.host.win-x64.7.0.9.nupkg.sha512"
-  ],
+  "expectedPackageFiles": [],
   "logs": []
 }

@@ -4,16 +4,16 @@ using RPG_TextGame.PlayerInformation;
 
 namespace RPG_TextGame.Enemy;
 
-public class Ares : IEnemy
+public class GreekMercenary : IEnemy
 {
+    public int enemyHealth = 150;
+
+    public string enemyName = "Greek Mercenary";
+
+    public int attackDamage = 12;
+
+    public RarityLevel rarity = RarityLevel.UNCOMMON;
     
-    public int enemyHealth = 500;
-
-    public string enemyName = "Ares, God of War";
-
-    public int attackDamage = 40;
-
-    public RarityLevel rarity = RarityLevel.MYTHIC;
     
     
     public void Fight(Player p)

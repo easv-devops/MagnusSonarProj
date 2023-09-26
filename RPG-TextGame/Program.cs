@@ -1,4 +1,5 @@
 ﻿using RPG_TextGame.Enemy;
+using RPG_TextGame.Enemy.CommonEnemy;
 using RPG_TextGame.Material.Ore;
 using RPG_TextGame.PlayerInformation;
 using RPG_TextGame.Tool.Edible;
@@ -9,7 +10,9 @@ public class Program
 {  
     public static void Main()
     {
+
         
+
 
 
 

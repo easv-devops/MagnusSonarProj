@@ -4,17 +4,15 @@ using RPG_TextGame.PlayerInformation;
 
 namespace RPG_TextGame.Enemy;
 
-public class Ares : IEnemy
+public class FootSoldier : IEnemy
 {
-    
-    public int enemyHealth = 500;
+    public int enemyHealth = 130;
 
-    public string enemyName = "Ares, God of War";
+    public string enemyName = "Athenian Foot Soldier";
 
-    public int attackDamage = 40;
+    public int attackDamage = 10;
 
-    public RarityLevel rarity = RarityLevel.MYTHIC;
-    
+    public RarityLevel rarity = RarityLevel.UNCOMMON;
     
     public void Fight(Player p)
     {
