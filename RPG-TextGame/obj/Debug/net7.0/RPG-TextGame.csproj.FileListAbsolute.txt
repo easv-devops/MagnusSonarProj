@@ -1,0 +1,14 @@
+C:\Users\MadMe\RiderProjects\RPG-TextGame\RPG-TextGame\bin\Debug\net7.0\RPG-TextGame.exe
+C:\Users\MadMe\RiderProjects\RPG-TextGame\RPG-TextGame\bin\Debug\net7.0\RPG-TextGame.deps.json
+C:\Users\MadMe\RiderProjects\RPG-TextGame\RPG-TextGame\bin\Debug\net7.0\RPG-TextGame.runtimeconfig.json
+C:\Users\MadMe\RiderProjects\RPG-TextGame\RPG-TextGame\bin\Debug\net7.0\RPG-TextGame.dll
+C:\Users\MadMe\RiderProjects\RPG-TextGame\RPG-TextGame\bin\Debug\net7.0\RPG-TextGame.pdb
+C:\Users\MadMe\RiderProjects\RPG-TextGame\RPG-TextGame\obj\Debug\net7.0\RPG-TextGame.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\MadMe\RiderProjects\RPG-TextGame\RPG-TextGame\obj\Debug\net7.0\RPG-TextGame.AssemblyInfoInputs.cache
+C:\Users\MadMe\RiderProjects\RPG-TextGame\RPG-TextGame\obj\Debug\net7.0\RPG-TextGame.AssemblyInfo.cs
+C:\Users\MadMe\RiderProjects\RPG-TextGame\RPG-TextGame\obj\Debug\net7.0\RPG-TextGame.csproj.CoreCompileInputs.cache
+C:\Users\MadMe\RiderProjects\RPG-TextGame\RPG-TextGame\obj\Debug\net7.0\RPG-TextGame.dll
+C:\Users\MadMe\RiderProjects\RPG-TextGame\RPG-TextGame\obj\Debug\net7.0\refint\RPG-TextGame.dll
+C:\Users\MadMe\RiderProjects\RPG-TextGame\RPG-TextGame\obj\Debug\net7.0\RPG-TextGame.pdb
+C:\Users\MadMe\RiderProjects\RPG-TextGame\RPG-TextGame\obj\Debug\net7.0\RPG-TextGame.genruntimeconfig.cache
+C:\Users\MadMe\RiderProjects\RPG-TextGame\RPG-TextGame\obj\Debug\net7.0\ref\RPG-TextGame.dll
