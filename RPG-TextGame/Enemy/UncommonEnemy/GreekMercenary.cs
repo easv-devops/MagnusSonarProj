@@ -20,4 +20,14 @@ public class GreekMercenary : IEnemy
     {
         throw new NotImplementedException();
     }
+
+    public RarityLevel getRarity()
+    {
+        return rarity;
+    }
+
+    public string getName()
+    {
+        return enemyName;
+    }
 }

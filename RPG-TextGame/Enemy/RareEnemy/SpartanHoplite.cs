@@ -19,4 +19,14 @@ public class SpartanHoplite : IEnemy
     {
         
     }
+
+    public RarityLevel getRarity()
+    {
+        return rarity;
+    }
+
+    public string getName()
+    {
+        return enemyName;
+    }
 }

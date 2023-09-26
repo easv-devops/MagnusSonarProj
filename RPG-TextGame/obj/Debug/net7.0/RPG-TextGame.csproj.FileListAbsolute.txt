@@ -12,3 +12,6 @@ C:\Users\MadMe\RiderProjects\RPG-TextGame\RPG-TextGame\obj\Debug\net7.0\refint\R
 C:\Users\MadMe\RiderProjects\RPG-TextGame\RPG-TextGame\obj\Debug\net7.0\RPG-TextGame.pdb
 C:\Users\MadMe\RiderProjects\RPG-TextGame\RPG-TextGame\obj\Debug\net7.0\RPG-TextGame.genruntimeconfig.cache
 C:\Users\MadMe\RiderProjects\RPG-TextGame\RPG-TextGame\obj\Debug\net7.0\ref\RPG-TextGame.dll
+C:\Users\MadMe\RiderProjects\RPG-TextGame\RPG-TextGame\bin\Debug\net7.0\Pastel.dll
+C:\Users\MadMe\RiderProjects\RPG-TextGame\RPG-TextGame\obj\Debug\net7.0\RPG-TextGame.csproj.AssemblyReference.cache
+C:\Users\MadMe\RiderProjects\RPG-TextGame\RPG-TextGame\obj\Debug\net7.0\RPG-TextGame.csproj.CopyComplete

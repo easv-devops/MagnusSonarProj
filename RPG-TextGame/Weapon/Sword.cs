@@ -2,7 +2,7 @@ using RPG_TextGame.Interface;
 
 namespace RPG_TextGame.Tool.Weapon;
 
-public class Sword : ITool
+public class Sword : IWeapon
 {
     public String Name = "Sword";
 

@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "tt4iU5oitjCTvSi38BuUxUHOINRPJMC5KJ2DQ3FcOw2meWz91cnXQbJGf8UdlkTEtV6LCVzBgmTtoH8C9KxVdA==",
+  "dgSpecHash": "S31Ln0q0vXGlIufxogMv8A16o7CKvpuM9kvJOE34fkYYUP9nlSZ36co+hfyXTV0CNuec7v8Ym0lkJevd4YfZUg==",
   "success": true,
   "projectFilePath": "C:\\Users\\MadMe\\RiderProjects\\RPG-TextGame\\RPG-TextGame\\RPG-TextGame.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\MadMe\\.nuget\\packages\\pastel\\4.1.0\\pastel.4.1.0.nupkg.sha512"
+  ],
   "logs": []
 }
