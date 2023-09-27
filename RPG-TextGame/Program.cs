@@ -13,20 +13,30 @@ public class Program
 {  
     public static void Main()
     {
-
         CheckRarity cr = new CheckRarity();
-        
-        
-        Ares ar = new Ares();
-
-        Commoner c = new Commoner();
+        TextPromt tp = new TextPromt();
 
         
         
+        // -------
         
+        //tp.startPrompt();
+
+        //string x = Console.ReadLine(); 
         
-        Console.WriteLine(cr.HandleEnemyRarity(ar) + " has appeared");
+        //tp.playerWelcomeMessage(x);
+        //Player _player = new Player(x);
 
 
-    }  
+
+        Player p1 = new Player("Cyraios");
+        Bandit b1 = new Bandit();
+        
+        
+        b1.Fight(p1);
+        
+
+
+    }
+    
 }

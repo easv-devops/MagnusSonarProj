@@ -17,7 +17,45 @@ public class Bandit : IEnemy
 
     public void Fight(Player p)
     {
-        throw new NotImplementedException();
+        Console.WriteLine("A battle has been initiated.\n");
+        
+        while (enemyHealth > 0 && p.playerHealth > 0)
+        {
+            
+            Console.WriteLine($"It's your turn to strike. You deal {p.playerDamage} damge.");
+            
+            enemyHealth = enemyHealth - p.playerDamage;
+            
+            if (enemyHealth <= 0)
+            {
+                Console.WriteLine($"{enemyName} falls over.");
+                break;
+            }
+            Console.WriteLine($"Enemy has {enemyHealth} health left. His turn to strike has come. He deals {attackDamage} damage.");
+            
+            
+            p.playerHealth = p.playerHealth - attackDamage;
+
+            if (p.playerHealth <= 0)
+            {
+                Console.WriteLine($"{p.playerName} falls over.");
+                break;
+            }
+
+            Console.WriteLine($"You have {p.playerHealth} health left.");
+            
+        }
+        
+        if (p.playerHealth <= 0)
+        {
+            Console.WriteLine($"{p.playerName} has been slain by {enemyName}. Better luck next time.");
+        }
+        
+        if (enemyHealth <= 0)
+        {
+            Console.WriteLine($"{p.playerName} has slain {enemyName}. Good job.");
+        }
+        
     }
 
     public RarityLevel getRarity()

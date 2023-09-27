@@ -1,4 +1,5 @@
 using RPG_TextGame.Interface;
+using RPG_TextGame.World;
 
 namespace RPG_TextGame.PlayerInformation;
 
@@ -8,7 +9,10 @@ public class Player
     public int playerHealth = 100;
     public List<InheritanceModel.Tool> inv = new List<InheritanceModel.Tool>();
     public String playerName;
+    public int playerDamage = 40;
+    public int playerLevel = 1;
     public List<IWeapon> equipped = new List<IWeapon>();
+    public WorldLocation wl = WorldLocation.START;
     
     
 
@@ -36,5 +40,26 @@ public class Player
     {
         equipped.Remove(weapon);
     }
+
+    public void LevelUp()
+    {
+        playerLevel = playerLevel + 1;
+    }
+
+    public bool IsDead()
+    {
+        if (playerHealth == 0)
+        {
+            return true;
+        }
+
+        return false;
+    }
+
+    public void IncreaseDamage()
+    {
+        playerDamage = playerDamage + 5;
+    }
+    
     
 }

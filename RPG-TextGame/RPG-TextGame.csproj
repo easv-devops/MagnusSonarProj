@@ -12,7 +12,6 @@
     </ItemGroup>
     <ItemGroup>
       <Folder Include="Tool\Tools\" />
-      <Folder Include="World\" />
     </ItemGroup>
     
 
