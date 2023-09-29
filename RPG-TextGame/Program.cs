@@ -13,9 +13,8 @@ public class Program
 {  
     public static void Main()
     {
-        CheckRarity cr = new CheckRarity();
         TextPromt tp = new TextPromt();
-        Bandit b1 = new Bandit();
+        
 
         
         // -------

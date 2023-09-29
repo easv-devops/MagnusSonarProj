@@ -1,6 +1,7 @@
 ﻿using System.Drawing;
 using System.Net.NetworkInformation;
 using Pastel;
+using RPG_TextGame.Interface;
 using RPG_TextGame.PlayerInformation;
 
 namespace RPG_TextGame.Functionality;
@@ -33,8 +34,13 @@ public class TextPromt
                           "\nBefore I go, here are the controls: type 'm' to move, 'i' to see your inventory, 'p'" +
                           "for player stats and 'q' to exit.");
         
+    }
+
+    public void EnemyHasAppeared(IEnemy enemy)
+    {
+        CheckRarity cr = new CheckRarity();
         
-        
+        Console.WriteLine($"\n {cr.HandleEnemyRarity(enemy)} has appeared and has challenged you to a fight. Do you accept it?(yes = y, no = n)");
     }
 
 
