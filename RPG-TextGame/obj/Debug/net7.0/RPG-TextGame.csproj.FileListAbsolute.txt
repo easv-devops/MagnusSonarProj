@@ -15,3 +15,4 @@ C:\Users\MadMe\RiderProjects\RPG-TextGame\RPG-TextGame\obj\Debug\net7.0\ref\RPG-
 C:\Users\MadMe\RiderProjects\RPG-TextGame\RPG-TextGame\bin\Debug\net7.0\Pastel.dll
 C:\Users\MadMe\RiderProjects\RPG-TextGame\RPG-TextGame\obj\Debug\net7.0\RPG-TextGame.csproj.AssemblyReference.cache
 C:\Users\MadMe\RiderProjects\RPG-TextGame\RPG-TextGame\obj\Debug\net7.0\RPG-TextGame.csproj.CopyComplete
+C:\Users\MadMe\RiderProjects\RPG-TextGame\RPG-TextGame\obj\Debug\net7.0\RPG-TextGame.sourcelink.json

@@ -15,6 +15,7 @@ public class Program
     {
         CheckRarity cr = new CheckRarity();
         TextPromt tp = new TextPromt();
+        Bandit b1 = new Bandit();
 
         
         // -------
@@ -25,26 +26,9 @@ public class Program
         
         tp.playerWelcomeMessage(p1);
 
-        while (!p1.IsDead())
-        {
-            if (Console.ReadLine().Equals('m'))
-            {
-                
-            }
-            else if (Console.ReadLine().Equals('i'))
-            {
-                
-            }
-            else if (Console.ReadLine().Equals('p'))
-            {
-                
-            }
-            else if (Console.ReadLine().Equals('q'))
-            {
-                
-            }
-            
-        }
+        MenuOptionHandling moh = new MenuOptionHandling();
+        
+        moh.OptionHandle(p1);
 
     }
     
