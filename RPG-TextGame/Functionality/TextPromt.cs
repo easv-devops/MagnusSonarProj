@@ -1,6 +1,7 @@
 ﻿using System.Drawing;
 using System.Net.NetworkInformation;
 using Pastel;
+using RPG_TextGame.PlayerInformation;
 
 namespace RPG_TextGame.Functionality;
 
@@ -22,13 +23,15 @@ public class TextPromt
     }
 
 
-    public void playerWelcomeMessage(string x)
+    public void playerWelcomeMessage(Player p)
     {
         
-        Console.WriteLine("\nAhh, I see. Well, welcome " + x.Pastel(Color.GreenYellow) + ".\n" +
+        Console.WriteLine("\nAhh, I see. Well, welcome " + p.playerName.Pastel(Color.GreenYellow) + ".\n" +
                           "Be careful around here, I wouldn't want you to end up like one of those...\n" +
                           "<Sokrates points at some crucified corpses>\n" +
-                          "Good luck to you, " + x.Pastel(Color.GreenYellow) + ". May the gods be with you.");
+                          "Good luck to you, " + p.playerName.Pastel(Color.GreenYellow) + ". May the gods be with you.\n" +
+                          "\nBefore I go, here are the controls: type 'm' to move, 'i' to see your inventory, 'p'" +
+                          "for player stats and 'q' to exit.");
         
         
         

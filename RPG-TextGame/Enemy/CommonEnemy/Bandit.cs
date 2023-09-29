@@ -17,7 +17,7 @@ public class Bandit : IEnemy
 
     public void Fight(Player p)
     {
-        Console.WriteLine("A battle has been initiated.\n");
+        Console.WriteLine("\nA battle has been initiated.\n");
         
         while (enemyHealth > 0 && p.playerHealth > 0)
         {

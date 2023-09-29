@@ -17,25 +17,34 @@ public class Program
         TextPromt tp = new TextPromt();
 
         
-        
         // -------
         
-        //tp.startPrompt();
-
-        //string x = Console.ReadLine(); 
+        tp.startPrompt();
         
-        //tp.playerWelcomeMessage(x);
-        //Player _player = new Player(x);
-
-
-
-        Player p1 = new Player("Cyraios");
-        Bandit b1 = new Bandit();
+        Player p1 = new Player(Console.ReadLine());
         
-        
-        b1.Fight(p1);
-        
+        tp.playerWelcomeMessage(p1);
 
+        while (!p1.IsDead())
+        {
+            if (Console.ReadLine().Equals('m'))
+            {
+                
+            }
+            else if (Console.ReadLine().Equals('i'))
+            {
+                
+            }
+            else if (Console.ReadLine().Equals('p'))
+            {
+                
+            }
+            else if (Console.ReadLine().Equals('q'))
+            {
+                
+            }
+            
+        }
 
     }
     
