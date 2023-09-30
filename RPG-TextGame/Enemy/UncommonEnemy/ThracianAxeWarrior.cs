@@ -6,20 +6,13 @@ namespace RPG_TextGame.Enemy;
 
 public class ThracianAxeWarrior : IEnemy
 {
-    public int enemyHealth = 120;
+    private int enemyHealth = 120;
 
-    public string enemyName = "Thracian Axe Warrior";
+    private string enemyName = "Thracian Axe Warrior";
 
-    public int attackDamage = 15;
+    private int attackDamage = 15;
 
-    public RarityLevel rarity = RarityLevel.UNCOMMON;
-    
-    
-    
-    public void Fight(Player p)
-    {
-        throw new NotImplementedException();
-    }
+    private RarityLevel rarity = RarityLevel.UNCOMMON;
 
     public RarityLevel getRarity()
     {

@@ -9,9 +9,10 @@ public class CombatHandler
     public void Fight(IEnemy enemy, Player player)
     {
         Console.WriteLine("\nA battle has been initiated.\n");
-        Console.WriteLine("\nPress y to start, no to leave.\n");
         
         string userInput = Console.ReadLine();
+
+        CheckRarity cr = new CheckRarity();
 
         int enemyHealth = enemy.getHealth();
 
@@ -21,16 +22,16 @@ public class CombatHandler
                 while (enemyHealth > 0 && player.playerHealth > 0)
                 {
             
-                    Console.WriteLine($"It's your turn to strike. You deal {player.playerDamage} damge.");
+                    Console.WriteLine($"It's your turn to strike. You deal {player.playerDamage} damage.");
             
                     enemyHealth = enemyHealth - player.playerDamage;
             
                     if (enemyHealth <= 0)
                     {
-                        Console.WriteLine($"{enemy.getName()} falls over.");
+                        Console.WriteLine($"{cr.HandleEnemyRarity(enemy)} falls over.");
                         break;
                     }
-                    Console.WriteLine($"Enemy has {enemyHealth} health left. His turn to strike has come. He deals {enemy.getDamage()} damage.");
+                    Console.WriteLine($"{cr.HandleEnemyRarity(enemy)} has {enemyHealth} health left. His turn to strike has come. He deals {enemy.getDamage()} damage.");
 
 
                     player.playerHealth = player.playerHealth - enemy.getDamage();
@@ -47,12 +48,12 @@ public class CombatHandler
         
                 if (player.playerHealth <= 0)
                 {
-                    Console.WriteLine($"{player.playerName} has been slain by {enemy.getName()}. Better luck next time.");
+                    Console.WriteLine($"{player.playerName} has been slain by {cr.HandleEnemyRarity(enemy)}. Better luck next time.");
                 }
         
                 if (enemyHealth <= 0)
                 {
-                    Console.WriteLine($"{player.playerName} has slain {enemy.getName()}. Good job.");
+                    Console.WriteLine($"{player.playerName} has slain {cr.HandleEnemyRarity(enemy)}. Good job.");
                     player.LevelUp();
                 }
                 break;
@@ -72,7 +73,5 @@ public class CombatHandler
         
         
     }
-    
-    
     
 }

@@ -6,19 +6,14 @@ namespace RPG_TextGame.Enemy;
 
 public class Zeus : IEnemy
 {
-    public int enemyHealth = 500;
+    private int enemyHealth = 500;
 
-    public string enemyName = "Zeus, God of Gods";
+    private string enemyName = "Zeus, God of Gods";
 
-    public int attackDamage = 50;
+    private int attackDamage = 50;
 
-    public RarityLevel rarity = RarityLevel.MYTHIC;
+    private RarityLevel rarity = RarityLevel.MYTHIC;
     
-    
-    public void Fight(Player p)
-    {
-        
-    }
 
     public RarityLevel getRarity()
     {

@@ -6,19 +6,14 @@ namespace RPG_TextGame.Enemy.CommonEnemy;
 
 public class Barbarian : IEnemy
 {
-    public int enemyHealth = 60;
+    private int enemyHealth = 60;
 
-    public string enemyName = "Barbarian";
+    private string enemyName = "Barbarian";
 
-    public int attackDamage = 5;
+    private int attackDamage = 5;
 
-    public RarityLevel rarity = RarityLevel.COMMON;
-
-
-    public void Fight(Player p)
-    {
-        throw new NotImplementedException();
-    }
+    private RarityLevel rarity = RarityLevel.COMMON;
+    
 
     public RarityLevel getRarity()
     {

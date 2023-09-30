@@ -6,18 +6,14 @@ namespace RPG_TextGame.Enemy;
 
 public class FootSoldier : IEnemy
 {
-    public int enemyHealth = 130;
+    private int enemyHealth = 130;
 
-    public string enemyName = "Athenian Foot Soldier";
+    private string enemyName = "Athenian Foot Soldier";
 
-    public int attackDamage = 10;
+    private int attackDamage = 10;
 
-    public RarityLevel rarity = RarityLevel.UNCOMMON;
+    private RarityLevel rarity = RarityLevel.UNCOMMON;
     
-    public void Fight(Player p)
-    {
-        
-    }
 
     public RarityLevel getRarity()
     {

@@ -12,19 +12,10 @@ public class Program
 {  
     public static void Main()
     {
-        //MenuOptionHandling moh = new MenuOptionHandling();
+        MenuOptionHandling moh = new MenuOptionHandling();
         
-        //moh.OptionHandle();
-
-        Player p1 = new Player("Magnus");
-        Bandit b1 = new Bandit();
-
-
-
-        CombatHandler ch = new CombatHandler();
+        moh.OptionHandle();
         
-        
-        ch.Fight(b1, p1);
         
 
 

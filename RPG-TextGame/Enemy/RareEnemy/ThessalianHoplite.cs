@@ -6,19 +6,14 @@ namespace RPG_TextGame.Enemy;
 
 public class ThessalianHoplite : IEnemy
 {
-    public int enemyHealth = 170;
+    private int enemyHealth = 170;
 
-    public string enemyName = "Thessalian Hoplite";
+    private string enemyName = "Thessalian Hoplite";
 
-    public int attackDamage = 20;
+    private int attackDamage = 20;
 
-    public RarityLevel rarity = RarityLevel.RARE;
-
-
-    public void Fight(Player p)
-    {
-        
-    }
+    private RarityLevel rarity = RarityLevel.RARE;
+    
 
     public RarityLevel getRarity()
     {

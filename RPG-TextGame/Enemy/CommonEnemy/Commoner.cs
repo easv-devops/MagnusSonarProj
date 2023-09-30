@@ -6,19 +6,13 @@ namespace RPG_TextGame.Enemy.CommonEnemy;
 
 public class Commoner : IEnemy
 {
-    public int enemyHealth = 50;
+    private int enemyHealth = 50;
 
-    public string enemyName = "Commoner";
+    private string enemyName = "Commoner";
 
-    public int attackDamage = 5;
+    private int attackDamage = 5;
 
-    public RarityLevel rarity = RarityLevel.COMMON;
-
-
-    public void Fight(Player p)
-    {
-        throw new NotImplementedException();
-    }
+    private RarityLevel rarity = RarityLevel.COMMON;
 
     public RarityLevel getRarity()
     {

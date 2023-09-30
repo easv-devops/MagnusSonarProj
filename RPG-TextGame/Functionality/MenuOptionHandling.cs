@@ -102,8 +102,6 @@ public class MenuOptionHandling
     }
     
     
-    
-    
     public void SeeInventory(Player p)
     {
 
@@ -131,59 +129,11 @@ public class MenuOptionHandling
 
     public void SpawnEnemies(Player p)
     {
-        TextPromt tp = new TextPromt();
+        EnemySpawns es = new EnemySpawns();
         
-        
-        Random _random = new Random();
-        int num = _random.Next(0, 101);
-        
-        if (p.wl == WorldLocation.ROAD)
-        {
-            if (num >= 0 && num <= 25)
-                Console.WriteLine("No enemies found...");
-            if (num > 25 && num <= 60)
-            {
-                Bandit b1 = new Bandit();
-                tp.EnemyHasAppeared(b1);
-                b1.Fight(p);
-            }
-            
-            if (num > 60 && num <= 80)
-            {
-                GreekMercenary gc = new GreekMercenary();
-                tp.EnemyHasAppeared(gc);
-                gc.Fight(p);
-            }
-            if (num > 80 && num <= 95)
-            {
-                SpartanHoplite sh = new SpartanHoplite();
-                tp.EnemyHasAppeared(sh);
-                sh.Fight(p);
-            }
-            if (num > 95 && num <= 100)
-            {
-                Ares ar = new Ares();
-                tp.EnemyHasAppeared(ar);
-                ar.Fight(p);
-            }
-            
-        }
-        
-        if (p.wl == WorldLocation.CITY)
-        {
-            /// ADD COMBAT IN OTHER REGIONS
-        }
-        
-        if (p.wl == WorldLocation.CAVE)
-        {
-            
-        }
+        es.SpawnEnemies(p);
         
     }
-
-    
-    
-    
     
     public void Exit()
     {

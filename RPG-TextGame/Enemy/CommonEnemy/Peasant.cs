@@ -7,23 +7,14 @@ namespace RPG_TextGame.Enemy.CommonEnemy;
 public class Peasant : IEnemy
 {
     
-    public int enemyHealth = 30;
+    private int enemyHealth = 30;
 
-    public string enemyName = "Peasant";
+    private string enemyName = "Peasant";
 
-    public int attackDamage = 3;
+    private int attackDamage = 3;
 
-    public RarityLevel rarity = RarityLevel.COMMON;
+    private RarityLevel rarity = RarityLevel.COMMON;
     
-    
-    
-    public void Fight(Player p)
-    {
-        
-        
-        
-    }
-
     public RarityLevel getRarity()
     {
         return rarity;

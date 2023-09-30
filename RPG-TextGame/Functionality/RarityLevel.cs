@@ -6,5 +6,4 @@ public enum RarityLevel
     UNCOMMON,
     RARE,
     MYTHIC
-
 }

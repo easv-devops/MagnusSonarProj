@@ -6,19 +6,14 @@ namespace RPG_TextGame.Enemy;
 
 public class Berserker : IEnemy
 {
-    public int enemyHealth = 180;
+    private int enemyHealth = 180;
 
-    public string enemyName = "Berserker";
+    private string enemyName = "Berserker";
 
-    public int attackDamage = 25;
+    private int attackDamage = 25;
 
-    public RarityLevel rarity = RarityLevel.RARE;
-
-
-    public void Fight(Player p)
-    {
-        
-    }
+    private RarityLevel rarity = RarityLevel.RARE;
+    
 
     public RarityLevel getRarity()
     {

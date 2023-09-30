@@ -36,7 +36,7 @@ public class CheckRarity
                 
                 break;
             default:
-                Console.WriteLine("Ukendt RarityLevel.");
+                Console.WriteLine("Unknown RarityLevel.");
                 break;
         }
 
