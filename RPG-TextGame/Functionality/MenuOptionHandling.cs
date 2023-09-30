@@ -9,15 +9,24 @@ namespace RPG_TextGame.Functionality;
 public class MenuOptionHandling
 {
 
-    public void OptionHandle(Player p)
+    public void OptionHandle()
     {
         bool going = true;
-
+        
+        TextPromt tp = new TextPromt();
+        
+        tp.startPrompt();
+        
+        Player p1 = new Player(Console.ReadLine());
+        
+        tp.playerWelcomeMessage(p1);
+        
+        
         while (going == true)
         {
             string userInput = Console.ReadLine();
             
-            HandleMainMenuChoice(userInput, p);
+            HandleMainMenuChoice(userInput, p1);
         }
     }
     
@@ -33,6 +42,9 @@ public class MenuOptionHandling
                 break;
             case "p":
                 SeeStats(p);
+                break;
+            case "b":
+                MovePlayerBack(p);
                 break;
             case "q":
                 Exit();
@@ -66,6 +78,31 @@ public class MenuOptionHandling
                 break;
         }
     }
+    
+    public void MovePlayerBack(Player p)
+    {
+        switch (p.wl)
+        {
+            case WorldLocation.START:
+                Console.WriteLine("You cannot move back any further.");
+                break;
+            case WorldLocation.ROAD:
+                p.wl = WorldLocation.START;
+                Console.WriteLine($"You have moved to {p.wl}");
+                break;
+            case WorldLocation.CITY:
+                p.wl = WorldLocation.ROAD;
+                Console.WriteLine($"You have moved to {p.wl}");
+                break;
+            case WorldLocation.CAVE:
+                p.wl = WorldLocation.CITY;
+                Console.WriteLine($"You have moved to {p.wl}");
+                break;
+        }
+    }
+    
+    
+    
     
     public void SeeInventory(Player p)
     {
@@ -134,7 +171,7 @@ public class MenuOptionHandling
         
         if (p.wl == WorldLocation.CITY)
         {
-            
+            /// ADD COMBAT IN OTHER REGIONS
         }
         
         if (p.wl == WorldLocation.CAVE)
@@ -142,9 +179,12 @@ public class MenuOptionHandling
             
         }
         
-        
     }
 
+    
+    
+    
+    
     public void Exit()
     {
         

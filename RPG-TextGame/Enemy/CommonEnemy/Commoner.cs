@@ -29,4 +29,14 @@ public class Commoner : IEnemy
     {
         return enemyName;
     }
+    
+    public int getDamage()
+    {
+        return attackDamage;
+    }
+
+    public int getHealth()
+    {
+        return enemyHealth;
+    }
 }

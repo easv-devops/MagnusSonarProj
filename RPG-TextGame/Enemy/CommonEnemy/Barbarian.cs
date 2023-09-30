@@ -1,9 +1,10 @@
 using RPG_TextGame.Functionality;
+using RPG_TextGame.Interface;
 using RPG_TextGame.PlayerInformation;
 
 namespace RPG_TextGame.Enemy.CommonEnemy;
 
-public class Barbarian
+public class Barbarian : IEnemy
 {
     public int enemyHealth = 60;
 
@@ -28,4 +29,15 @@ public class Barbarian
     {
         return enemyName;
     }
+    
+    public int getDamage()
+    {
+        return attackDamage;
+    }
+
+    public int getHealth()
+    {
+        return enemyHealth;
+    }
+    
 }

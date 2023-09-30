@@ -31,7 +31,7 @@ public class TextPromt
                           "Be careful around here, I wouldn't want you to end up like one of those...\n" +
                           "<Sokrates points at some crucified corpses>\n" +
                           "Good luck to you, " + p.playerName.Pastel(Color.GreenYellow) + ". May the gods be with you.\n" +
-                          "\nBefore I go, here are the controls: type 'm' to move, 'i' to see your inventory, 'p'" +
+                          "\nBefore I go, here are the controls: type 'm' to move, 'b' to move back, 'i' to see your inventory, 'p'" +
                           "for player stats and 'q' to exit.");
         
     }

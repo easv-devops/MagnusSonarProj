@@ -12,4 +12,8 @@ public interface IEnemy
 
     string getName();
 
+    int getDamage();
+
+    int getHealth();
+
 }

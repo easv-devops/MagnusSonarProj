@@ -43,7 +43,7 @@ public class SpartanHoplite : IEnemy
 
                     if (p.playerHealth <= 0)
                     {
-                        Console.WriteLine($"{p.playerName} falls over. A crow flies down and distracts you. As you look back, he is gone. Divine intervention.");
+                        Console.WriteLine($"{p.playerName} falls over.");
                         break;
                     }
 
@@ -59,11 +59,15 @@ public class SpartanHoplite : IEnemy
                 if (enemyHealth <= 0)
                 {
                     Console.WriteLine($"{p.playerName} has slain {enemyName}. Good job.");
+                    p.LevelUp();
                 }
                 break;
             
             case "n":
                 Console.WriteLine("You denied the fight. You can hear laughing coming from the heaven. The Gods are laughing at your cowardice.");
+                break;
+            default:
+                Console.WriteLine("Invalid key...");
                 break;
         }
     }
@@ -76,5 +80,15 @@ public class SpartanHoplite : IEnemy
     public string getName()
     {
         return enemyName;
+    }
+
+    public int getDamage()
+    {
+        return attackDamage;
+    }
+
+    public int getHealth()
+    {
+        return enemyHealth;
     }
 }
