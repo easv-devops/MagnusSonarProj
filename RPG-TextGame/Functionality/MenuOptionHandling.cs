@@ -1,5 +1,6 @@
 using RPG_TextGame.Enemy;
 using RPG_TextGame.Enemy.CommonEnemy;
+using RPG_TextGame.Interface;
 using RPG_TextGame.PlayerInformation;
 using RPG_TextGame.Tool.Edible;
 using RPG_TextGame.World;
@@ -104,21 +105,20 @@ public class MenuOptionHandling
     
     public void SeeInventory(Player p)
     {
+        List<ITool> invenList = p.inv;
 
-        Apple a = new Apple();
+        Console.WriteLine("You have this in your inventory:");
+        foreach (ITool t in invenList)
+        {
+            Console.WriteLine(t.GetName());
+        }
         
-        p.inv.Add(a);
-
-        string x = p.inv.ToString();
-        
-        Console.WriteLine($"\n{x}");
-        KeepGoing();
     }
     
     public void SeeStats(Player p)
     {
         Console.WriteLine($"\n{p.playerName}: Has {p.playerHealth} health, lvl: {p.playerLevel} and is currently at {p.wl}");
-        KeepGoing();
+        
     }
     
     public void KeepGoing()
@@ -132,7 +132,6 @@ public class MenuOptionHandling
         EnemySpawns es = new EnemySpawns();
         
         es.SpawnEnemies(p);
-        
     }
     
     public void Exit()

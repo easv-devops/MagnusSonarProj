@@ -13,6 +13,7 @@ public class CombatHandler
         string userInput = Console.ReadLine();
 
         CheckRarity cr = new CheckRarity();
+        ItemDrop iDrop = new ItemDrop();
 
         int enemyHealth = enemy.getHealth();
 
@@ -54,6 +55,7 @@ public class CombatHandler
                 if (enemyHealth <= 0)
                 {
                     Console.WriteLine($"{player.playerName} has slain {cr.HandleEnemyRarity(enemy)}. Good job.");
+                    iDrop.DropItem(player);
                     player.LevelUp();
                 }
                 break;
@@ -65,13 +67,5 @@ public class CombatHandler
                 Console.WriteLine("Invalid key...");
                 break;
         }
-        
-        
-        
-        
-        
-        
-        
     }
-    
 }

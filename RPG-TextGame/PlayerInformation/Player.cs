@@ -7,7 +7,7 @@ public class Player
 {
 
     public int playerHealth = 100;
-    public List<InheritanceModel.Tool> inv = new List<InheritanceModel.Tool>();
+    public List<ITool> inv = new List<ITool>();
     public String playerName;
     public int playerDamage = 40;
     public int playerLevel = 1;
@@ -21,12 +21,12 @@ public class Player
         this.playerName = pName;
     }
 
-    public void AddToInventory(InheritanceModel.Tool t)
+    public void AddToInventory(ITool t)
     {
         inv.Add(t);
     }
     
-    public void RemoveFromInventory(InheritanceModel.Tool t)
+    public void RemoveFromInventory(ITool t)
     {
         inv.Remove(t); // Fix this
     }
