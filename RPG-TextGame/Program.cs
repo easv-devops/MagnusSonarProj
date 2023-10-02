@@ -14,6 +14,5 @@ public class Program
         MenuOptionHandling moh = new MenuOptionHandling();
         
         moh.OptionHandle();
-        
     }
 }

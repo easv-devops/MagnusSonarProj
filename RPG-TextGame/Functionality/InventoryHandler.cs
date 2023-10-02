@@ -11,11 +11,7 @@ public class InventoryHandler
         IDictionary<int, ITool> playerInventory = new Dictionary<int, ITool>();
 
         Console.WriteLine("You have this in your inventory:");
-        //foreach (ITool t in invenList)
-        //{
-        //    Console.WriteLine(t.GetName());
-        //}
-
+        
         int index = 1;
         
         foreach (ITool t in invenList)

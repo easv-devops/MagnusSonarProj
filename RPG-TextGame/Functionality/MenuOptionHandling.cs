@@ -110,18 +110,9 @@ public class MenuOptionHandling
     
     public void SeeInventory(Player p)
     {
-        //List<ITool> invenList = p.inv;
-
-        //Console.WriteLine("You have this in your inventory:");
-        //foreach (ITool t in invenList)
-        //{
-        //    Console.WriteLine(t.GetName());
-        //}
-
         InventoryHandler ih = new InventoryHandler();
         
         ih.CheckInventory(p);
-
     }
     
     public void SeeStats(Player p)
@@ -148,6 +139,4 @@ public class MenuOptionHandling
         Console.WriteLine("See you on the other side, traveller.");
         going = false;
     }
-    
-    
 }
