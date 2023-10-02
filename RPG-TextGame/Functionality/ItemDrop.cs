@@ -61,7 +61,22 @@ public class ItemDrop
         
         if (num > 80 && num <= 100)
         {
-            Console.WriteLine("Nothing dropped...");
+            GoldenApple ga = new GoldenApple();
+            Console.WriteLine($"{ga.GetName()} dropped... do you want to pick it up? (y = yes, n = no)");
+            string userInput = Console.ReadLine();
+            switch (userInput)
+            {
+                case "y":
+                    p.AddToInventory(ga);
+                    Console.WriteLine($"You picked up the {ga.GetName()}..");
+                    break;
+                case "n":
+                    Console.WriteLine($"You let the {ga.GetName()} lay there..");
+                    break;
+                default:
+                    Console.WriteLine("Invalid input.. you lost the drop..");
+                    break;
+            }
         }
     }
 }

@@ -50,12 +50,64 @@ public class EnemySpawns
         
         if (p.wl == WorldLocation.CITY)
         {
-            /// ADD COMBAT IN OTHER REGIONS
+            if (num >= 0 && num <= 25)
+                Console.WriteLine("No enemies found...");
+            if (num > 25 && num <= 60)
+            {
+                Barbarian bb1 = new Barbarian();
+                tp.EnemyHasAppeared(bb1);
+                ch.Fight(bb1, p);
+            }
+            
+            if (num > 60 && num <= 80)
+            {
+                ThracianAxeWarrior tx = new ThracianAxeWarrior();
+                tp.EnemyHasAppeared(tx);
+                ch.Fight(tx, p);
+            }
+            if (num > 80 && num <= 95)
+            {
+                Berserker bs = new Berserker();
+                tp.EnemyHasAppeared(bs);
+                ch.Fight(bs, p);
+            }
+            if (num > 95 && num <= 100)
+            {
+                Zeus z = new Zeus();
+                tp.EnemyHasAppeared(z);
+                ch.Fight(z, p);
+            }
         }
         
         if (p.wl == WorldLocation.CAVE)
         {
-            /// ADD COMBAT IN OTHER REGIONS
+            if (num >= 0 && num <= 25)
+                Console.WriteLine("No enemies found...");
+            if (num > 25 && num <= 60)
+            {
+                Peasant p1 = new Peasant();
+                tp.EnemyHasAppeared(p1);
+                ch.Fight(p1, p);
+            }
+            
+            if (num > 60 && num <= 80)
+            {
+                FootSoldier fs = new FootSoldier();
+                tp.EnemyHasAppeared(fs);
+                ch.Fight(fs, p);
+            }
+            if (num > 80 && num <= 95)
+            {
+                ThessalianHoplite th = new ThessalianHoplite();
+                tp.EnemyHasAppeared(th);
+                ch.Fight(th, p);
+            }
+            if (num > 95 && num <= 100)
+            {
+                Ares ar = new Ares();
+                tp.EnemyHasAppeared(ar);
+                ch.Fight(ar, p);
+            }
         }
     }
 }

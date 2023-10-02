@@ -1,4 +1,5 @@
 using RPG_TextGame.Interface;
+using RPG_TextGame.Tool.Weapon;
 using RPG_TextGame.World;
 
 namespace RPG_TextGame.PlayerInformation;
@@ -28,7 +29,7 @@ public class Player
     
     public void RemoveFromInventory(ITool t)
     {
-        inv.Remove(t); // Fix this
+        inv.Remove(t);
     }
     
     public void Equip(IWeapon weapon)
@@ -44,6 +45,7 @@ public class Player
     public void LevelUp()
     {
         playerLevel = playerLevel + 1;
+        IncreaseDamage();
     }
 
     public bool IsDead()
@@ -59,6 +61,13 @@ public class Player
     public void IncreaseDamage()
     {
         playerDamage = playerDamage + 5;
+    }
+
+    public int GetPlayerDamage()
+    {
+        IWeapon iw1 = equipped[0];
+
+        return playerDamage + iw1.GetDamage();
     }
     
     

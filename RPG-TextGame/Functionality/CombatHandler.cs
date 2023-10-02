@@ -14,6 +14,12 @@ public class CombatHandler
 
         CheckRarity cr = new CheckRarity();
         ItemDrop iDrop = new ItemDrop();
+        
+        
+        
+        
+        
+        
 
         int enemyHealth = enemy.getHealth();
 
@@ -23,9 +29,9 @@ public class CombatHandler
                 while (enemyHealth > 0 && player.playerHealth > 0)
                 {
             
-                    Console.WriteLine($"It's your turn to strike. You deal {player.playerDamage} damage.");
+                    Console.WriteLine($"It's your turn to strike. You deal {player.GetPlayerDamage()} damage.");
             
-                    enemyHealth = enemyHealth - player.playerDamage;
+                    enemyHealth = enemyHealth - player.GetPlayerDamage();
             
                     if (enemyHealth <= 0)
                     {

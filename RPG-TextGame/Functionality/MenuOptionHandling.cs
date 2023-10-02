@@ -3,6 +3,7 @@ using RPG_TextGame.Enemy.CommonEnemy;
 using RPG_TextGame.Interface;
 using RPG_TextGame.PlayerInformation;
 using RPG_TextGame.Tool.Edible;
+using RPG_TextGame.Tool.Weapon;
 using RPG_TextGame.World;
 
 namespace RPG_TextGame.Functionality;
@@ -10,20 +11,24 @@ namespace RPG_TextGame.Functionality;
 public class MenuOptionHandling
 {
 
+    bool going = true;
+    
+    TextPromt tp = new TextPromt();
+    
+    Sword s = new Sword();
+    
     public void OptionHandle()
     {
-        bool going = true;
-        
-        TextPromt tp = new TextPromt();
         
         tp.startPrompt();
         
         Player p1 = new Player(Console.ReadLine());
         
         tp.playerWelcomeMessage(p1);
+        p1.Equip(s);
         
         
-        while (going == true)
+        while (going == true && p1.playerHealth != 0)
         {
             string userInput = Console.ReadLine();
             
@@ -105,14 +110,18 @@ public class MenuOptionHandling
     
     public void SeeInventory(Player p)
     {
-        List<ITool> invenList = p.inv;
+        //List<ITool> invenList = p.inv;
 
-        Console.WriteLine("You have this in your inventory:");
-        foreach (ITool t in invenList)
-        {
-            Console.WriteLine(t.GetName());
-        }
+        //Console.WriteLine("You have this in your inventory:");
+        //foreach (ITool t in invenList)
+        //{
+        //    Console.WriteLine(t.GetName());
+        //}
+
+        InventoryHandler ih = new InventoryHandler();
         
+        ih.CheckInventory(p);
+
     }
     
     public void SeeStats(Player p)
@@ -136,7 +145,8 @@ public class MenuOptionHandling
     
     public void Exit()
     {
-        
+        Console.WriteLine("See you on the other side, traveller.");
+        going = false;
     }
     
     

@@ -3,11 +3,11 @@ using RPG_TextGame.PlayerInformation;
 
 namespace RPG_TextGame.Tool.Edible;
 
-public class Banana : ITool
+public class GoldenApple : ITool
 {
-    public String Name = "Banana";
+    public String Name = "Golden Apple";
     
-    public int HealthAdd = 35;
+    public int HealthAdd = 45;
     
     public void Act(Player player)
     {
